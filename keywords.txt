@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map For DFRobot_DF2301Q
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_DF2301Q	KEYWORD1
+DFRobot_DF2301Q_I2C	KEYWORD1
+DFRobot_DF2301Q_UART	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getCMDID	KEYWORD2
+playByCMDID	KEYWORD2
+getWakeTime	KEYWORD2
+setWakeTime	KEYWORD2
+setVolume	KEYWORD2
+setMuteMode	KEYWORD2
+resetModule	KEYWORD2
+settingCMD	KEYWORD2
+
+#######################################
+# Instances (LITERAL1)
+#######################################
+
+DF2301Q_UART_MSG_CMD_SET_VOLUME	LITERAL1
+DF2301Q_UART_MSG_CMD_SET_ENTERWAKEUP	LITERAL1
+DF2301Q_UART_MSG_CMD_SET_MUTE	LITERAL1
+DF2301Q_UART_MSG_CMD_SET_WAKE_TIME	LITERAL1
