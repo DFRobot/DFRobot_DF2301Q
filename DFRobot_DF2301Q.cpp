@@ -27,6 +27,10 @@ DFRobot_DF2301Q_I2C::DFRobot_DF2301Q_I2C(TwoWire *pWire, uint8_t i2cAddr)
 bool DFRobot_DF2301Q_I2C::begin()
 {
   _pWire->begin();   // Wire.h(I2C)library function initialize wire library
+  _pWire->beginTransmission(_deviceAddr);
+  _pWire->write(0x00);
+  if(0 != _pWire->endTransmission())
+    return false;
   return true;
 }
 
