@@ -38,7 +38,7 @@ uint8_t DFRobot_DF2301Q_I2C::getCMDID(void)
 {
   uint8_t CMDID = 0;
   readReg(DF2301Q_I2C_REG_CMDID, &CMDID);
-  // DBG(CMDID);
+  delay(50);   // Prevent the access rate from interfering with other functions of the voice module
   return CMDID;
 }
 
