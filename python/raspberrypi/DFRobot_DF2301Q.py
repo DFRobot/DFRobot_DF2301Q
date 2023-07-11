@@ -156,6 +156,7 @@ class DFRobot_DF2301Q_I2C(DFRobot_DF2301Q):
       @brief Get the ID corresponding to the command word
       @return Return the obtained command word ID, returning 0 means no valid ID is obtained
     '''
+    time.sleep(0.05)   # Prevent the access rate from interfering with other functions of the voice module
     return self._read_reg(DF2301Q_I2C_REG_CMDID)
 
   def play_by_CMDID(self, CMDID):

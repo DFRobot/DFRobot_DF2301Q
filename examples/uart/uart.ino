@@ -31,10 +31,6 @@ void setup()
 {
   Serial.begin(115200);
 
-#if defined(ARDUINO_SAM_ZERO)   // The M0 board needs to be initialized at this time
-  Serial1.begin(DF2301Q_UART_BAUDRATE);
-#endif
-
   // Init the sensor
   while( !( DF2301Q.begin() ) ) {
     Serial.println("Communication with device failed, please check connection");
