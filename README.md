@@ -198,6 +198,7 @@ Micro:bit          |      √       |              |             |
 ## History
 
 - 2022/12/30 - Version 1.0.0 released.
+- 2026/10/22 - Version 1.0.1 released. Add the missing #pragma pack() after the UART message struct to restore default alignment, so it no longer breaks other libraries compiled alongside it.
 
 
 ## Credits
