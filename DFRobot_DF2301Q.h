@@ -231,6 +231,8 @@ public:
     // uint8_t tail;   /* send add auto */
   }sUartMsg_t;
 
+  #pragma pack()
+
   /**
    * @enum eReceiveState_t
    * @brief receive use state machine method, so two char can arrive different time
